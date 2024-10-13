@@ -1,0 +1,516 @@
+/* General Body Style */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #e0e7ef, #a5c0d7); /* Light navy gradient */
+    color: #001f3f; /* Dark navy */
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    transition: background-color 0.3s ease;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #001f3f; /* Dark navy */
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.nav__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: #a5c0d7; /* Light navy */
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #e0e7ef; /* Very light navy */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff5e79; /* You can keep this or change it to a navy shade */
+}
+
+/* Section Styling */
+section {
+    padding: 100px 20px;
+    margin-top: 80px;
+}
+
+.section__container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+    background-color: #e0e7ef; /* Light navy */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.section__container:hover {
+    transform: scale(1.02);
+}
+
+h1, h2, h3 {
+    color: #001f3f; /* Dark navy */
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1.5px;
+    text-align: center;
+    position: relative;
+}
+
+h1 span.highlight, h2 span.highlight, h3 span.highlight {
+    color: #ff5e79; /* Accent color */
+    font-weight: bold;
+    animation: color-change 2s infinite alternate;
+    padding: 5px 10px;
+    background-color: #a5c0d7; /* Light navy */
+    border-radius: 5px;
+}
+
+@keyframes color-change {
+    from {
+        color: #ff5e79;
+    }
+    to {
+        color: #001f3f;
+    }
+}
+
+p {
+    line-height: 1.6;
+    color: #515a75;
+}
+
+/* Home Section */
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    text-align: center;
+}
+
+.intro__image img {
+    border-radius: 50%;
+    max-width: 180px;
+    border: 5px solid #ff5e79;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.intro__image img:hover {
+    transform: rotate(5deg);
+}
+
+/* About Section */
+/* Personal Details Box Styling */
+.profile-details {
+    background-color: #002147; /* Dark navy */
+    color: #FFFFFF; /* Light text for contrast */
+    padding: 25px; /* Spacious padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+    margin-bottom: 30px; /* Margin below the box */
+    margin-right: 30px; /* Right margin to separate from carousel */
+    transition: all 0.3s ease; /* Smooth transitions */
+}
+
+.profile-details h3 {
+    font-size: 1.8rem; /* Larger name font */
+    color: #a5c0d7; /* Light navy */
+    margin-bottom: 20px;
+}
+
+.profile-details ul {
+    list-style: none; /* No bullets */
+    padding: 0;
+    margin: 0;
+}
+
+.profile-details ul li {
+    margin-bottom: 15px; /* Increased spacing between items */
+    font-size: 1.1rem; /* Larger text size for better readability */
+}
+
+.profile-details ul li strong {
+    color: #ff5e79; /* Accent color for labels */
+    font-weight: bold;
+}
+
+/* Adjustments for smaller screens (tablets and below) */
+@media (max-width: 1024px) {
+    .profile-details {
+        padding: 20px;
+        margin-right: 0; /* Remove margin to fit better on smaller screens */
+    }
+
+    .profile-details h3 {
+        font-size: 1.6rem; /* Slightly reduce heading size */
+    }
+
+    .profile-details ul li {
+        font-size: 1rem; /* Adjust font size for readability */
+        margin-bottom: 10px;
+    }
+}
+
+/* Adjustments for mobile screens (phones) */
+@media (max-width: 768px) {
+    .profile-details {
+        padding: 15px;
+        text-align: center; /* Center-align content for mobile */
+        margin-right: 0; /* Remove right margin on mobile */
+    }
+
+    .profile-details h3 {
+        font-size: 1.4rem; /* Reduce heading size further for mobile */
+    }
+
+    .profile-details ul li {
+        font-size: 0.95rem; /* Smaller text size on mobile */
+        margin-bottom: 8px;
+    }
+}
+
+/* Additional Styling for Hover Effect (optional) */
+.profile-details:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+    transform: translateY(-5px); /* Slight lift effect */
+}
+
+/* Portfolio Section */
+/* Portfolio Card Style */
+.portfolio-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensures rounded corners for content */
+    background-color: #ffffff; /* Background color for the card */
+    border: 2px solid #000000; /* Border color matching the theme */
+    padding: 20px; /* Padding inside the card */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/* Hover Effect */
+.portfolio-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect on hover */
+}
+
+/* Hover Color Change for Portfolio Content */
+.portfolio-card:hover .portfolio-content {
+    background-color: rgba(187, 232, 245, 0.9); /* Lighter background on hover */
+    color: #333; /* Darker text color for contrast */
+}
+
+/* Additional Styles for Portfolio Content */
+.portfolio-content {
+    border-radius: 8px; /* Rounded corners for content */
+    padding: 15px; /* Padding inside the content box */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .portfolio-card {
+        padding: 15px; /* Reduced padding for mobile */
+    }
+}
+
+/* Skills Section */
+/* Skills Section Styles */
+/* Skills Section */
+.skills-section {
+    padding: 60px 20px; /* Padding for spacing */
+    background-color: #f4f4f4; /* Light background for contrast */
+}
+
+.skill-cards-container {
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Allow cards to wrap onto the next line */
+    justify-content: space-around; /* Distribute cards evenly */
+    max-width: 1200px; /* Limit the maximum width of the container */
+    margin-left: auto; /* Center align container */
+    margin-right: auto; /* Center align container */
+}
+
+.skill-card {
+    background-color: #ffffff; /* White background for cards */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    text-align: center; /* Center align text */
+    padding: 20px; /* Padding inside the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    height: 150px; /* Fixed height for uniformity */
+    width: calc(25% - 20px); /* Set width to 25% of container minus spacing */
+    margin: 10px; /* Spacing between cards */
+}
+
+/* New Image Container */
+.image-container {
+    background-color: #e7e7e7; /* Light grey background for the image box */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Padding around the image */
+    display: flex; /* Flexbox for centering image */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 60px; /* Fixed width for the image container */
+    height: 60px; /* Fixed height for the image container */
+    margin-bottom: 15px; /* Space between image and text */
+}
+
+/* Uniform Image Sizes */
+.skill_logo {
+    max-width: 100%; /* Ensure logo scales within the container */
+    max-height: 100%; /* Ensure logo scales within the container */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .skill-card {
+        width: calc(33.33% - 20px); /* 3 cards per row */
+        height: 120px; /* Smaller height on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .skill-card {
+        width: calc(100% - 20px); /* 1 card per row on extra small screens */
+        height: 100px; /* Smaller height on extra small screens */
+    }
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #001f3f; /* Dark navy */
+    color: #e0e7ef; /* Light navy text */
+    text-align: center;
+    padding: 20px 0; /* Padding for spacing */
+    position: relative; /* Position for footer */
+    z-index: 1; /* Ensure footer is on top */
+}
+
+footer p {
+    margin: 0; /* No margin for footer text */
+    font-size: 1rem; /* Font size for footer */
+}
+
+/* Responsive Media Queries for Footer */
+@media (max-width: 768px) {
+    footer p {
+        font-size: 0.9rem; /* Smaller text on mobile */
+    }
+}
+/* Carousel Arrow Styling */
+.carousel-control-prev {
+    left: -80px; /* Adjust this value to create more space */
+    /* Other existing styles */
+}
+
+.carousel-control-next {
+    right: -80px; /* Adjust this value to create more space */
+    /* Other existing styles */
+}
+
+/* Personal Details Box Adjustments */
+.profile-details {
+    margin-left: 20px; /* Add left margin to separate from the carousel */
+    /* Other existing styles */
+}
+
+/* Media Queries for Responsiveness (if needed) */
+@media (max-width: 768px) {
+    .carousel-control-prev {
+        left: -40px; /* Adjust for smaller screens */
+    }
+
+    .carousel-control-next {
+        right: -40px; /* Adjust for smaller screens */
+    }
+    
+    .profile-details {
+        margin-left: 10px; /* Reduce margin on smaller screens */
+    }
+}
+
+/* Skills Section */
+.skills-section {
+    padding: 80px 20px; /* Padding for spacing */
+    background-color: #f4f4f4; /* Light background for contrast */
+}
+
+.skill-cards-container {
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Allow cards to wrap onto the next line */
+    justify-content: center; /* Center align cards */
+    max-width: 1200px; /* Limit the maximum width of the container */
+    margin: auto; /* Center align container */
+    margin-top: 40px;
+}
+
+.skill-card {
+    background-color: #ffffff; /* White background for cards */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    text-align: center; /* Center align text */
+    padding: 20px; /* Padding inside the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    height: 200px; /* Fixed height for uniformity */
+    width: 200px; /* Fixed width for uniformity */
+    margin: 10px; /* Spacing between cards */
+}
+
+/* New Image Container */
+.image-container {
+    background-color: #e7e7e7; /* Light grey background for the image box */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Padding around the image */
+    display: flex; /* Flexbox for centering image */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 60px; /* Fixed width for the image container */
+    height: 60px; /* Fixed height for the image container */
+    margin-bottom: 15px; /* Space between image and text */
+}
+
+/* Uniform Image Sizes */
+.skill_logo {
+    max-width: 100%; /* Ensure logo scales within the container */
+    max-height: 100%; /* Ensure logo scales within the container */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .skill-card {
+        width: calc(33.33% - 20px); /* 3 cards per row */
+        height: auto; /* Allow height to adjust based on content */
+    }
+}
+
+@media (max-width: 480px) {
+    .skill-card {
+        width: calc(100% - 20px); /* 1 card per row on extra small screens */
+        height: auto; /* Allow height to adjust based on content */
+    }
+}
+.contact-section {
+    background-color: #1b1f27; /* Dark background */
+    padding: 50px 20px;
+    color: #fff;
+}
+
+.contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #007bff; /* Blue color for the heading */
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #2a2a2a; /* Darker background for the form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    font-size: 1em;
+    background-color: #2a2a2a; /* Match form background */
+    color: #fff;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007bff; /* Blue focus border */
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Blue button */
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.social-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-links p {
+    margin-bottom: 10px;
+    color: #fff; /* White text for connect message */
+}
+
+.social-icon {
+    margin: 0 10px;
+}
+
+.social-icon img {
+    width: 30px; /* Adjust size as needed */
+    height: 30px;
+}

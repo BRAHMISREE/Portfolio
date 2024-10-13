@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./_ My Portfolio_files/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+    <style>
+        html {
+            scroll-behavior: smooth;  
+        }
+        #about, #resume, #skills, #contact {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav__content">
+            <div class="logo"><a href="#">BRAHMISREE</a></div>
+           
+            <ul>
+                <li><a href="#home" onclick="showSection('home')">Home</a></li>
+                <li><a href="#about" onclick="showSection('about')">About</a></li>
+                <li><a href="#portfolio" onclick="showSection('portfolio')">Portfolio</a></li>
+                <li><a href="#skills" onclick="showSection('skills')">Skills</a></li>
+                <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+      <div class="section__container">
+        <div class="intro">
+          <div class="intro__content">
+            <h1 class="animate-slide">Hi, I'm <span class="highlight">K. Brahmisree</span></h1>
+            <p class="animate-fade">Web Developer </p>
+          </div>
+          <div class="intro__image">
+            <img src="https://res.cloudinary.com/dqtwxsibc/image/upload/v1728576364/mypic_lz9t0o.jpg" alt="Your Picture" class="circle-image">
+          </div>
+        </div>
+      </div>
+    </section>
+  
+   
+
+      <section id="about">
+        <div class="container">
+          <h2>About Me</h2>
+          <div class="row">
+            <!-- Profile Details -->
+            <div class="col-lg-4">
+              <div class="profile-details">
+                <h3>Brahmisree K</h3>
+                <p>Web Developer</p>
+                <ul>
+                  <li><strong>Birthday:</strong> 7 August 2006</li>
+                 
+                  <li><strong>Degree:</strong> B.Tech (CSE)</li>
+                  
+                 
+                </ul>
+                
+              </div>
+            </div>
+      
+            <!-- Carousel for Education and Experience -->
+            <div class="col-lg-8">
+              <div id="educationCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <!-- Slide 1 -->
+                  <div class="carousel-item active">
+                    <div class="education-block">
+                      <h4>Bachelor of Technology</h4>
+                      <p>2024 - Present</p>
+                      <p>Indian Institute of Technology, Indore</p>
+                      <p>Pursuing 2nd Year B.Tech in Computer Science and Engineering, learning about web development, algorithms, and more.</p>
+                    </div>
+                  </div>
+                  <!-- Slide 2 -->
+                  <div class="carousel-item">
+                    <div class="education-block">
+                      <h4>Higher Secondary School</h4>
+                      <p>2021 - 2023</p>
+                      <p>Sri chaitanya College </p>
+                      <p>Completed schooling with MPC.</p>
+                    </div>
+                  </div>
+                  <!-- Slide 3 -->
+                  <div class="carousel-item">
+                    <div class="education-block">
+                      <h4>Secondary School</h4>
+                      <p>2021-passed out</p>  
+                      <p>Completed schooling with 10 CPA.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#educationCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#educationCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+        
+
+        
+
+    <!-- portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+      <div class="container">
+          <h2>MY PROJECTS</h2>
+     
+          <div class="row">
+              <!-- Project 1 -->
+              <div class="col-lg-4 col-md-6">
+                  <div class="portfolio-card">
+                       <!-- Replace with your project image -->
+                      <div class="portfolio-content">
+                          <h3>Image to Text OCR</h3>
+                          <p>Developed an OCR tool that extracts text from images in real-time, leveraging modern machine learning techniques to recognize characters with high accuracy.<br> This tool can process various image formats and convert them into editable text files.</p>
+                          <a href="https://github.com/BRAHMISREE/ML21_LANGUAGE-RECOGNITION.git" target="_blank" class="btn btn-secondary">View Code</a>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Add more projects as needed -->
+          </div>
+      </div>
+  </section>
+  
+
+    <!-- Skills Section -->
+    
+
+    <section id="skills" class="skills-section container">
+      <h2 class="section-heading" style="font-size: 2.5rem; font-weight: bold; text-align: center; margin-bottom: 40px;">Skills</h2>
+
+      <div class="skill-cards-container">
+          <div class="skill-card">
+              <img class="skill_logo" src="https://tse1.mm.bing.net/th?id=OIP.hj_41H6P-W1UPSX2x_vk4wAAAA&pid=Api&P=0&h=180" alt="Skill Logo">
+              <h3>Web Development</h3>
+              <p>HTML, CSS, JavaScript, Bootstrap</p>
+          </div>
+          <div class="skill-card">
+              <img class="skill_logo" src="https://tse4.mm.bing.net/th?id=OIP.dJToM1TiZiJA0GYwzDHwjQHaHY&pid=Api&P=0&h=180" alt="Skill Logo">
+              <h3>Programming Languages</h3>
+              <p>C++, Python</p>
+          </div>
+          <div class="skill-card">
+              <img class="skill_logo" src="https://tse4.mm.bing.net/th?id=OIP.VkV8_njbSWxJtobrxownSgHaHa&pid=Api&P=0&h=180" alt="Skill Logo">
+              <h3>Data Structures</h3>
+              <p>Arrays, Linked Lists, Stacks</p>
+          </div>
+          <div class="skill-card">
+              <img class="skill_logo" src="https://tse1.mm.bing.net/th?id=OIP.y0y95ZtPbW9reoRY0UPJwAHaHa&pid=Api&P=0&h=180" alt="Skill Logo">
+              <h3>Database Management</h3>
+              <p>MySQL, MongoDB</p>
+          </div>
+          <div class="skill-card">
+              <img class="skill_logo" src="https://tse4.mm.bing.net/th?id=OIP.NuZA6DPF9LJLl1g1LYQKMgHaHa&pid=Api&P=0&h=180" alt="Skill Logo">
+              <h3>Version Control</h3>
+              <p>Git, GitHub</p>
+          </div>
+          <div class="skill-card">
+              <img class="skill_logo" src="https://tse2.mm.bing.net/th?id=OIP.YcbcewoeyzzmKkh1kMs9DAHaHa&pid=Api&P=0&h=180" alt="Skill Logo">
+              <h3>UI/UX Design</h3>
+              <p>Canva, Figma</p>
+          </div>
+      </div>
+  </section>
+  
+
+
+    <!-- Contact Section -->
+    <!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <div class="container">
+      <h2>Contact Me</h2>
+      <form action="/send-message" method="post" class="contact-form">
+          <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+      </form>
+      <div class="social-links">
+          <p>Connect with me</p>
+          <a href="https://www.linkedin.com/in/kadirappagari-brahmisree-aab5a029a/" class="social-icon"><img src="https://up.yimg.com/ib/th?id=OIP.jZGUFYns6zpgyl87CTFfSgHaHa&pid=Api&rs=1&c=1&qlt=95&w=122&h=122" alt="LinkedIn"></a>
+          <a href="#" class="social-icon"><img src="https://up.yimg.com/ib/th?id=OIP.2h7bNH1ACRIzmOZOs6Po6AHaHa&pid=Api&rs=1&c=1&qlt=95&w=118&h=118" alt="Instagram"></a>
+          <a href="https://github.com/BRAHMISREE" class="social-icon"><img src="https://up.yimg.com/ib/th?id=OIP.EX_uJI1Ac_u575edah5tCQHaHa&pid=Api&rs=1&c=1&qlt=95&w=121&h=121" alt="GitHub"></a>
+      </div>
+  </div>
+</section>
+
+    
+    <script>
+        // Function to show the selected section and hide others
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('section').forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        // On page load, make sure only the home section is visible
+        window.onload = function() {
+            showSection('home');
+        };
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      // Add the JavaScript function here
+      document.querySelector('.contact-form').addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent the default form submission
+  
+          // Get form data
+          const name = document.getElementById('name').value;
+          const email = document.getElementById('email').value;
+          const message = document.getElementById('message').value;
+  
+          // Display an alert with the message details
+          alert(`Thank you for your message, ${name}!\n\n` +
+                `Email: ${email}\n` +
+                `Message: ${message}\n\n` +
+                `We will get back to you soon!`);
+  
+          // Clear the form fields after submission
+          document.querySelector('.contact-form').reset();
+      });
+  </script>
+  
+
+  
+
+</body>
+</html>
